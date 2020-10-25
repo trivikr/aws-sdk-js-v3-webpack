@@ -1,7 +1,4 @@
-const {
-  DynamoDBClient,
-  ListTablesCommand,
-} = require("@aws-sdk/client-dynamodb");
+import { DynamoDBClient, ListTablesCommand } from "@aws-sdk/client-dynamodb";
 
 export const listTables = async (config, params) => {
   const client = new DynamoDBClient(config);
